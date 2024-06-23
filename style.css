@@ -6,13 +6,43 @@
     padding: 0;
     box-sizing: border-box;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 
 
+
+html {
+  --var-bg-color: #7743e9;
+  --var-secondary-color: #6e51cf;
+  --var-text-color: #fff;
+  --var-text-color-dark: #333;
+  --var-bg-light: #f0f4ff;
+  --var-bg-dark: #d3c9f3;
+}
 /* Styles généraux */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--var-bg-light);
+  color: var(--var-text-color-dark);
 }
+
+header {
+  height: 4rem;
+  background-color: white;
+  padding: 0 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+
+
+
 /* logo */
 
 header img{
@@ -62,16 +92,130 @@ header nav ul li a:hover{
     border-radius: 5px;
 }
 
-main1{
-    width: 80%;
-    margin: auto;
+.carousel-inner img {
+  max-height: 400px; /* Réduisez cette valeur pour diminuer la hauteur des images */
+  object-fit: cover; /* Pour que l'image couvre l'espace sans déformation */
+
+}
+/* Masquer la barre latérale par défaut */
+#nav-latteral {
+display: none;
+position: fixed;
+left: 0;
+top: 0;
+width: 250px;
+height: 500px;
+background-color: white;
+box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+z-index: 1000;
+border-radius: 5px;
+
+background: linear-gradient(90deg, var(--var-bg-color) 25%, #9b8dc8 100%);
 }
 
-.diapo{
-    position: relative;
-    overflow: hidden;
-    height: 15rem;
+/* Montrer la barre latérale lorsqu'elle est active */
+#nav-latteral.active {
+display: block;
 }
+
+/* Styles supplémentaires pour le wrapper pour couvrir toute la page quand la barre latérale est ouverte */
+#nav-wrapper.active {
+display: block;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+z-index: 999;
+}
+
+/* Masquer le wrapper par défaut */
+#nav-wrapper {
+display: none;
+}
+
+
+#nav-wrapper {
+position: absolute;
+top: 0;
+left: 0;
+height: 100vh;
+width: 100vw;
+background-color: rgba(0, 0, 0, 0.6);
+z-index: 2;
+display: none;
+}
+
+#nav-wrapper.active {
+display: block;
+}
+
+#nav-close {
+margin-bottom: 4rem;
+}
+
+.nav-links {
+padding: 1rem 6rem 1rem 3rem;
+}
+
+.nav-link {
+cursor: pointer;
+font-size: 25px;
+margin-bottom: 50px;
+display: flex;
+align-items: center;
+}
+
+.nav-link a{
+list-style: none;
+text-decoration: none;
+}
+
+.nav-link ion-icon {
+margin-right: 15px;
+}
+
+.nav-link{
+transition: all 0.2s ease;
+}
+
+.nav-button {
+position: absolute;
+font-size: 40px;
+cursor: pointer;
+height: 50px;
+width: 50px;
+display: none;
+justify-content: center;
+border-radius: 5px;
+top: 10px;
+left:  10px;
+}
+
+
+
+
+.nav-button:hover {
+color: bleu;
+background-color: #dedede;
+}
+/* Default button style */
+.button {
+padding: 10px 20px;
+background-color: blue; 
+color: white; 
+font-size: 20px; 
+}
+main::-webkit-scrollbar {
+background-color: #dedede;
+width: 0.5rem;
+}
+main::-webkit-scrollbar-thumb {
+background-color: #757575;
+}
+
+
 
 #nav-droite, #nav-gauche{
     position: absolute;
@@ -111,101 +255,6 @@ main1{
     background-color: rgba(255,255,255,0.4);
     padding: 30px;
 }
-/* Section de présentation */
-#presentation {
-    background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 24px;
-    color: #333333;
-}
-/* Section text de présentation1 */
-p {
-    font-size: 16px;
-    line-height: 1.5;
-    color: #666666;
-}
-
-
-/* Pied de page */
-footer {
-    background-color: #333333;
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-}
-/* Section de groupe_présentation en general */
-.groupe_presentation{
-    background-color: rgb(228, 226, 226);
-    display: flex;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-/* Section de présentation1 */
-.presentation1{
-  background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #000000;
-}
-/* Section de présentation2 */
-.presentation2{
-  background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-/* Section de présentation3 */
-.presentation3{
-  background-color: #ffffff;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
-
-
-
-html {
-  --var-bg-color: #7743e9;
-  --var-secondary-color: #6e51cf;
-  --var-text-color: #fff;
-  --var-text-color-dark: #333;
-  --var-bg-light: #f0f4ff;
-  --var-bg-dark: #d3c9f3;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  background-color: var(--var-bg-light);
-  color: var(--var-text-color-dark);
-}
-
-header {
-  height: 4rem;
-  background-color: white;
-  padding: 0 2rem;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
 /* Mise en forme de la section main */
 main2 {
   padding: 2rem;
@@ -226,7 +275,6 @@ main2 {
   justify-content: center;
   align-items: center;
 }
-
 #hero .gauche h1 {
   font-size: 3rem;
   font-weight: 900;
@@ -299,6 +347,7 @@ main2 {
   left: 100px;
 }
 
+
 @keyframes animation {
   0% {
     transform: translateY(0);
@@ -310,6 +359,65 @@ main2 {
     transform: translateY(0);
   }
 }
+/* Section de présentation */
+#presentation {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 24px;
+    color: #333333;
+}
+/* Section text de présentation1 */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666666;
+}
+
+
+
+/* Section de groupe_présentation en general */
+.groupe_presentation{
+    background-color: rgb(228, 226, 226);
+    display: flex;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Section de présentation1 */
+.presentation1{
+  background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #000000;
+}
+/* Section de présentation2 */
+.presentation2{
+  background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Section de présentation3 */
+.presentation3{
+  background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
 
 /* Mise en form de la section service */
 
@@ -503,11 +611,17 @@ footer {
   background-color: #fff;
   border-radius: 5px;
 }
-
+/* Pied de page */
+footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
 /* Medias queries */
 
 @media screen and (max-width: 768px) {
-  header nav {
+  header .menu nav a {
     display: none;
   }
 
@@ -541,6 +655,26 @@ footer {
     min-height: 100vh;
     flex-direction: column;
   }
+  .nav-link {
+    cursor: pointer;
+    font-size: 25px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+  }
+  .groupe_presentation{
+    background-color: rgb(228, 226, 226);
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .presentation1 .presentation2  .presentation3{
+    margin: 10px;
+    padding: 10px;
+
+  }
 }
 
 @media screen and (max-width : 768px){
@@ -552,8 +686,25 @@ footer {
         header img{
           margin: 9px;
         }
-        .groupe_presentation{
-          display: block;
-        }
+        
         
       }
+      /* Button style for screens less than 600px wide */
+@media (max-width: 768px) {
+  .button {
+  padding: 20px 40px; /* Increase padding */
+  font-size: 24px; /* Increase font size */
+  display: block; /* Change display to block if needed */
+  }
+  .nav-button {
+  display: block;
+  }
+  .nav-latteral {
+  left: -100%;
+  
+  }
+  }
+  .nav-links{
+  padding: 6rem 70px;
+  }
+     
