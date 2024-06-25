@@ -6,6 +6,9 @@
     <title>École XYZ</title>
     <link rel="stylesheet" href="approt.css">
 </head>
+<style>
+    
+</style>
 <body>
     <header>
         <div class="logo">
@@ -19,8 +22,32 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+    <div id="nav-latteral" class="nav-latteral">
+        <div id="nav-close" class="nav-button">
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="nav-links">
+          <div class="nav-link" style="color: black;">
+            <a href="#" style="color: black;">Acceuil</a>
+          </div>
+          <div class="nav-link" style="color: black;">
+            <a href="Appropot.html" style="color: black;">Approt</a>
+          </div>
+          <div class="nav-link">
+            <a href="equipe.html"style="color: black;">Equipe</a>
+          </div>
+          <div class="nav-link">
+            <a href="contact.html"style="color: black;">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div id="nav-wrapper"></div>
+      <nav>
+        <div id="nav-open" class="nav-button">
+          <ion-icon name="reorder-three"></ion-icon>
+        </div>
+      </nav>
     </header>
-
     <main>
         <!-- Section À Propos -->
         <section id="about" class="about">
@@ -33,88 +60,223 @@
                 <p>Notre mission est d'inspirer et de former les leaders de demain en mettant l'accent sur l'excellence académique, le développement personnel et la responsabilité sociale. Nos valeurs fondamentales incluent le respect, l'intégrité, et la diversité.</p>
             </div>
         </section>
-            <div class="facilities">
-                <h2>Installations</h2>
-                <p>Nos installations comprennent une bibliothèque moderne, des laboratoires scientifiques bien équipés, des terrains de sport, et des salles de classe confortables et technologiques. Chaque espace est conçu pour maximiser l'apprentissage et le bien-être des élèves.</p>
-            </div>
-            </section>
+    </main>
 
         <!-- Section Crèche et Maternelle -->
-        <section id="levels" class="levels">
-            <h1>Nos Niveaux : Crèche et Maternelle</h1>
-            <div class="creche">
-                <h2>Crèche</h2>
-                <p>La crèche de l'École XYZ accueille les enfants de 6 mois à 3 ans dans un environnement chaleureux et stimulant. Nos professionnels de la petite enfance veillent à leur développement global en proposant des activités adaptées à chaque âge.</p>
-                <div class="photo">
-                    <img src="https://www.bing.com/images/search?view=detailV2&ccid=NKHFwxjm&id=CC5E121717699D235E5E699E6FAEDC8F5EFE763C&thid=OIP.NKHFwxjmyAIqbiV6mD4LTwHaE8&mediaurl=https%3a%2f%2fwww.collegelharmattan.com%2fassets%2fimages%2fabout%2fabout2.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.34a1c5c318e6c8022a6e257a983e0b4f%3frik%3dPHb%252bXo%252fcrm%252beaQ%26pid%3dImgRaw%26r%3d0&exph=3687&expw=5530&q=Collge+l+harmattan&simid=608028797069586921&FORM=IRPRST&ck=856F8679DC456430851B2FDF6B9A8EC1&selectedIndex=1&itb=0" >
-                    <img src="https://www.bing.com/images/search?view=detailV2&ccid=tvzTH1fY&id=F1021ADD6577D8AEBA893376B6CCD9D976595D31&thid=OIP.tvzTH1fY0jABt1Hop5s0aAHaE8&mediaurl=https%3a%2f%2fcollegelharmattan.com%2fpublic%2fasset%2fimg%2fIMG_2695.JPG&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b6fcd31f57d8d23001b751e8a79b3468%3frik%3dMV1ZdtnZzLZ2Mw%26pid%3dImgRaw%26r%3d0&exph=2304&expw=3456&q=Collge+l+harmattan&simid=607989815955251995&FORM=IRPRST&ck=4C381CC8948761D84D393DA662C567E1&selectedIndex=20&itb=0" >
+    <main>
+        <div class="animation-container">
+        <section id="creche-maternelle">
+            <h2>Section Crèche et Maternelle</h2>
+            <p>Bienvenue dans notre section dédiée à la crèche et à la maternelle. Nous offrons un environnement sûr, stimulant et éducatif pour les jeunes enfants, leur permettant de s'épanouir et de grandir en toute confiance.</p>
+            <div class="image-section">
+                <img src="C:\Users\Abija\Pictures\1715071221199.jpg" alt="Enfants jouant à la crèche">
+            </div>
+            <button onclick="toggleDetails('crecheMaternelleDetails')">En savoir plus</button>
+            <div id="crecheMaternelleDetails" class="details" ">
+                <h3>Crèche</h3>
+                <p>Dans notre crèche, nous accueillons les tout-petits avec des activités adaptées à leur âge, incluant des jeux éducatifs, des ateliers d'éveil, et des sorties pédagogiques. Notre équipe est dédiée à assurer le bien-être et le développement des enfants dans un cadre sécurisé.</p>
+                <div class="image-section">
+                    <img src="C:\Users\Abija\Pictures\1715071221214.jpg" alt="Enfants en activité à la maternelle">
                 </div>
+                <h3>Maternelle</h3>
+                <p>En maternelle, nous encourageons le développement des compétences sociales et cognitives des enfants à travers des activités ludiques et éducatives. Les enfants participent à des activités artistiques, des jeux de groupe, et des séances de lecture, leur permettant de développer leur créativité et leur amour de l'apprentissage.</p>
             </div>
-            <div class="maternelle">
-                <h2>Maternelle</h2>
-                <p>La maternelle accueille les enfants de 3 à 6 ans. Notre programme met l'accent sur l'éveil des sens, l'autonomie, et l'apprentissage par le jeu. Nous préparons ainsi les enfants à entrer dans l'enseignement primaire avec confiance et enthousiasme.</p>
-            </div>
+        </div>
         </section>
-
-        <!-- Section Humanitaire -->
-        <section id="humanitarian" class="humanitarian">
-            <h1>Activités Humanitaires</h1>
-            <div class="community-service">
-                <h2>Service Communautaire</h2>
-                <p>Nos élèves participent régulièrement à des projets de service communautaire. Ces activités leur permettent de développer leur sens des responsabilités et leur empathie, tout en contribuant positivement à la société.</p>
+    </main>
+    <main>
+        <section id="primaire">
+            <h2>Niveau Primaire</h2>
+            <p style="font-size: 1.2em;line-height: 1.5;">Bienvenue dans notre section dédiée au niveau primaire. Nous offrons un environnement d'apprentissage enrichissant et stimulant pour les enfants de 6 à 11 ans, leur permettant de développer des compétences académiques et sociales essentielles.</p>
+            <div class="image-section">
+                <img src="C:\Users\Abija\Pictures\primary_kids.jpg" alt="Enfants au niveau primaire">
             </div>
-            <div class="charity-events">
-                <h2>Événements de Charité</h2>
-                <p>L'École XYZ organise des événements de charité tout au long de l'année pour soutenir diverses causes. Ces événements incluent des collectes de fonds, des ventes de charité, et des journées de sensibilisation.</p>
-            </div>
-        </section>
-
-        <!-- Section Admissions -->
-        <section id="admissions" class="admissions">
-            <h1>Admissions à l'École XYZ</h1>
-            <div class="procedure">
-                <h2>Procédure d'inscription</h2>
-                <p>Pour s'inscrire à l'École XYZ, veuillez suivre les étapes suivantes :</p>
-                <ol>
-                    <li>Remplir le formulaire de pré-inscription en ligne.</li>
-                    <li>Soumettre les documents requis (bulletins de notes, lettre de motivation, etc.).</li>
-                    <li>Participer à une entrevue avec le comité d'admission.</li>
-                    <li>Recevoir la décision d'admission par email.</li>
-                </ol>
-            </div>
-            <div class="documents">
-                <h2>Formulaires et documents</h2>
-                <p>Téléchargez les formulaires nécessaires pour l'inscription :</p>
-                <ul>
-                    <li><a href="formulaire_inscription.pdf" download>Formulaire d'inscription</a></li>
-                    <li><a href="liste_documents.pdf" download>Liste des documents requis</a></li>
-                </ul>
-            </div>
-            <div class="dates">
-                <h2>Dates importantes</h2>
-                <p>Voici les dates limites pour les admissions :</p>
-                <ul>
-                    <li>Date limite de pré-inscription : 15 septembre</li>
-                    <li>Entretiens d'admission : du 1er au 15 octobre</li>
-                    <li>Décisions d'admission : 1er novembre</li>
-                </ul>
-            </div>
-            <div class="faqs">
-                <h2>FAQs</h2>
-                <p>Réponses aux questions fréquemment posées :</p>
-                <ul>
-                    <li><strong>Quelle est la durée du processus d'admission ?</strong> Le processus prend environ 6 semaines.</li>
-                    <li><strong>Quels sont les frais de scolarité ?</strong> Les frais varient selon le niveau scolaire. Veuillez consulter notre <a href="tarifs.html">page des tarifs</a> pour plus de détails.</li>
-                    <li><strong>Offrez-vous des bourses d'études ?</strong> Oui, nous offrons plusieurs bourses basées sur le mérite et les besoins financiers.</li>
-                </ul>
+            <button onclick="toggleDetails('primaireDetails')">En savoir plus</button>
+            <div id="primaireDetails" class="details" style="display: none;">
+                <h3>Programmes Académiques</h3>
+                <p>Nos programmes académiques sont conçus pour stimuler la curiosité et l'amour de l'apprentissage chez les enfants. Nous offrons des cours en mathématiques, sciences, langues, et arts, avec des méthodes d'enseignement innovantes et interactives.</p>
+                <div class="image-section">
+                    <img src="C:\Users\Abija\Pictures\classroom.jpg" alt="Classe au niveau primaire">
+                </div>
+                <h3>Activités Extrascolaires</h3>
+                <p>En plus des cours académiques, nous proposons une variété d'activités extrascolaires pour encourager le développement personnel et social des enfants. Des sports, de la musique, et des clubs artistiques sont disponibles pour tous les élèves.</p>
             </div>
         </section>
     </main>
+        </section>
+
+        <!-- Section Humanitaire -->
+    <main>
+        <section id="terminal">
+            <h2>Niveau Terminal</h2>
+            <p style="font-size: 1.2em;line-height: 1.5;">Bienvenue dans notre section dédiée aux étudiants de terminale. Nous offrons un environnement académique rigoureux et stimulant pour préparer les étudiants aux défis de l'enseignement supérieur et de leur future carrière.</p>
+            <div class="image-section">
+                <img src="C:\Users\Abija\Pictures\terminal_students.jpg" alt="Étudiants de terminale">
+            </div>
+            <button onclick="toggleDetails('terminalDetails')">En savoir plus</button>
+            <div id="terminalDetails" class="details">
+                <h3>Programme Académique</h3>
+                <p>Notre programme académique de terminale est conçu pour offrir une préparation approfondie aux examens du baccalauréat et aux admissions universitaires. Nous offrons des cours avancés dans diverses matières, y compris les sciences, les mathématiques, les langues, et les sciences humaines.</p>
+                
+                <h4>Laboratoires de Sciences</h4>
+                <p >Nos laboratoires de sciences sont équipés de matériel de pointe permettant aux étudiants de réaliser des expériences pratiques en physique, chimie, et biologie.</p>
+                <div class="image-section">
+                    <img src="C:\Users\Abija\Pictures\science_lab.jpg" alt="Laboratoire de sciences">
+                </div>
+                
+                <h4>Salles de Classe Avancées</h4>
+                <p>Les salles de classe sont équipées de technologies modernes pour faciliter un apprentissage interactif et dynamique. Chaque classe dispose de tableaux interactifs, de projecteurs, et de ressources numériques.</p>
+                <div class="image-section">
+                    <img src="C:\Users\Abija\Pictures\advanced_class.jpg" alt="Classe avancée">
+                </div>
+                
+                <h4>Installations Sportives</h4>
+                <p>Nos installations sportives comprennent un gymnase, des terrains de sport extérieurs, et une piscine. Ces installations permettent aux étudiants de participer à diverses activités sportives et de maintenir une bonne condition physique.</p>
+                <div class="image-section">
+                    <img src="C:\Users\Abija\Pictures\sports_facility.jpg" alt="Installations sportives">
+                </div>
+                
+                <h3>Orientation et Conseils</h3>
+                <p>Nous fournissons un soutien personnalisé en orientation et en conseils pour aider les étudiants à faire des choix éclairés concernant leur avenir académique et professionnel. Nos conseillers sont disponibles pour discuter des options universitaires, des bourses, et des carrières possibles.</p>
+            </div>
+        </section>
+    </main>
+    <section id="humanitarian-activities">
+        <h2>Activités Humanitaires</h2>
+        <p style="font-size: 1.2em;line-height: 1.5;">Nos étudiants participent à diverses activités humanitaires pour contribuer à la société et développer leur sens de la responsabilité sociale. Ces activités incluent des campagnes de collecte de fonds, du bénévolat dans des centres communautaires, et des projets de soutien aux personnes défavorisées.</p>
+        <div class="image-section">
+            <img src="path/to/humanitarian_activities.jpg" alt="Activités humanitaires">
+        </div>
+    </section>
+
+    <section id="admissions">
+        <h2>Admissions à l'École</h2>
+        <p>Pour postuler à notre école, veuillez remplir le formulaire de candidature disponible sur notre site web. Les admissions sont basées sur les résultats académiques et une entrevue personnelle.</p>
+        <button onclick="toggleDetails('admissionsDetails')">En savoir plus</button>
+        <div id="admissionsDetails" class="details">
+            <h3>Critères d'Admission</h3>
+            <p>Les critères d'admission incluent les résultats académiques, les activités extrascolaires, et une entrevue avec le comité d'admission.</p>
+            <h3>Procédure de Candidature</h3>
+            <p>Remplissez le formulaire de candidature en ligne, soumettez les documents requis, et prenez rendez-vous pour une entrevue.</p>
+        </div>
+    </section>
+
+    <section id="forms-documents">
+        <h2>Formulaires et Documents</h2>
+        <p>Vous pouvez télécharger les formulaires et documents nécessaires pour l'admission, les bourses, et les autorisations parentales à partir de notre site web.</p>
+        <div class="image-section">
+            <img src="path/to/forms_documents.jpg" alt="Formulaires et documents">
+        </div>
+        <h2>Téléchargez les formulaires nécessaires pour l'inscription :</h2>
+	<a href="#">Formulaire d'inscription</a>
+	<a href="#">Liste des documents requis</a>
+	<a href="#">Formulaire d'inscription</a>
+	<a href="#">Liste des documents requis</a>
+	<a href="#">Formulaire d'inscription</a>
+
+    </section>
+
+    <section id="important-dates">
+        <h2>Dates Importantes</h2>
+        <p>Consultez notre calendrier académique pour connaître les dates importantes telles que les dates d'inscription, les vacances scolaires, et les examens.</p>
+        <div class="image-section">
+            <img src="path/to/important_dates.jpg" alt="Dates importantes">
+        </div>
+    </section>
+
+    <section id="payment">
+        <h2>Comment Payer</h2>
+        <p>Les frais de scolarité peuvent être payés en ligne via notre portail sécurisé, par virement bancaire, ou par chèque. Des plans de paiement échelonnés sont également disponibles.</p>
+        <div class="image-section">
+            <img src="path/to/payment.jpg" alt="Comment payer">
+        </div>
+    </section>
+
+    <section id="academic-schedule">
+        <h2>Horaire Académique</h2>
+        <p>Notre horaire académique est conçu pour offrir un équilibre entre les cours, les activités extrascolaires, et le temps de révision. Consultez l'horaire détaillé sur notre site web.</p>
+        <div class="image-section">
+            <img src="path/to/academic_schedule.jpg" alt="Horaire académique">
+        </div>
+    </section>
+    <div class="charity-events">
+        <h2>Événements de Charité</h2>
+        <p>L'École XYZ organise des événements de charité tout au long de l'année pour soutenir diverses causes. Ces événements incluent des collectes de fonds, des ventes de charité, et des journées de sensibilisation.</p>
+    </div>
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <p>Vous trouverez ci-dessous les réponses aux questions les plus fréquemment posées par les étudiants et leurs parents.</p>
+        <button onclick="toggleDetails('faqsDetails')">Voir les FAQs</button>
+        <div id="faqsDetails" class="details">
+            <h3>Quels sont les frais de scolarité?</h3>
+            <p>Les frais de scolarité varient selon le programme choisi. Consultez notre page sur les frais pour plus de détails.</p>
+            <h3>Quelles activités extrascolaires sont disponibles?</h3>
+            <p>Nous offrons une variété d'activités, y compris des clubs de sport, des clubs de sciences, des groupes de musique, et plus encore.</p>
+            <h3>Comment puis-je obtenir une bourse?</h3>
+            <p>Les bourses sont attribuées en fonction des résultats académiques et des besoins financiers. Consultez notre page sur les bourses pour plus d'informations.</p>
+            <h3>Quelle est la durée du processus d'admission ?</h3>
+            <p>Le processus prend environ * semaines.</p>
+	        <h3>Quels sont les frais de scolarité ?</h3>
+            <p>Les frais varient selon le niveau scolaire. Veuillez consulter notre page des tarifs pour plus de détails.</p>
+	        <h3>Offrez-vous des bourses d'études ?</h3>
+            <p> Oui, nous offrons plusieurs bourses basées sur le mérite et les besoins financiers.</p>
+
+        </div>
+    </section>
+</main>
+            
+
+        <!-- Section Admissions -->
+        
+
 
     <footer>
-        <p>&copy; 2024 École XYZ. Tous droits réservés.</p>
+        <p><center>&copy; 2024 École XYZ. Tous droits réservés.</center></p>
     </footer>
+        <script>
+        function toggleDetails(id) {
+            var element = document.getElementById(id);
+            if (element.style.display === "none") {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
+        }
 
-    <script src="script.js"></script>
+        function createBubbles() {
+            const animationContainer = document.querySelector('.animation-container');
+            for (let i = 0; i < 20; i++) {
+                const bubble = document.createElement('div');
+                bubble.className = 'bubble';
+                bubble.style.width = bubble.style.height = `${Math.random() * 60 + 20}px`;
+                bubble.style.left = `${Math.random() * 100}%`;
+                bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
+                animationContainer.appendChild(bubble);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', createBubbles);
+
+        function toggleDetails(id) {
+    var element = document.getElementById(id);
+    if (element.style.display === "none") {
+        element.style.display = "block";
+    } else {
+        element.style.display = "none";
+    }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const details = document.querySelectorAll('.details');
+    details.forEach(detail => detail.style.display = 'none');
+});
+
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="script.js">
 </body>
 </html>
