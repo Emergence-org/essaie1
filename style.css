@@ -53,20 +53,7 @@ header img{
 }
 
 /* En-tête */
-header {
-    height: 4rem;
-    background-color: white;
-    padding: 0 2rem;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-  }
+
 header nav ul{
     display: flex;
     align-items: center;
@@ -362,7 +349,7 @@ main2 {
 /* Section de présentation */
 #presentation {
     background-color: #ffffff;
-    border-radius: 5px;
+    padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -469,6 +456,23 @@ p {
   margin-top: 1rem;
 }
 
+#Option{
+  margin-top: 2rem; 
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  color: #000000;
+  padding: 5px;
+}
+#Option H2{
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--var-text-color-dark);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
 /* Mise en forme de la partie album */
 
 #album {
@@ -483,6 +487,21 @@ p {
   text-align: center;
 }
 
+#Option .option{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.option p{
+  width: 100%;
+  border: 1px solid #d3c9f3;
+  border-radius: 5px;
+  padding: 3rem;
+  color: #000000;
+  background: linear-gradient(90deg, var(--var-bg-color) 15%, #9b8dc8 100%);;
+  text-align: center;
+  font-size: 2rem;
+}
 #album .photo {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -683,12 +702,10 @@ footer {
         }
         header img{
           margin: 9px;
-        }
-        
-        
+        }  
       }
       /* Button style for screens less than 600px wide */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .button {
   padding: 20px 40px; /* Increase padding */
   font-size: 24px; /* Increase font size */
@@ -701,8 +718,26 @@ footer {
   left: -100%;
   
   }
+  .option p{
+    width: 100%;
+    border: 1px solid #d3c9f3;
+    border-radius: 3px;
+    padding: 10px;
+    color: #000000;
+    background: linear-gradient(90deg, var(--var-bg-color) 15%, #9b8dc8 100%);
+    text-align: center;
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  #Option .option{
+    display: block;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
   }
   .nav-links{
   padding: 6rem 70px;
   }
+
      
