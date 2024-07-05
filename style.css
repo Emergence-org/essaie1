@@ -455,6 +455,33 @@ p {
 .card-service h3 {
   margin-top: 1rem;
 }
+.container{
+  background-color: #ccb6fa;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.col-md-5 img{
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+}
+.media-body{
+  border: 1px solid white;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: white;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+.container h4{
+  color: blue;
+  font-size: 25px;
+}
+.container h2{
+  color: blue;
+  margin-top: 15px;
+  font-size: xx-large;
+}
 
 #Option{
   margin-top: 2rem; 
@@ -501,6 +528,17 @@ p {
   background: linear-gradient(90deg, var(--var-bg-color) 15%, #9b8dc8 100%);;
   text-align: center;
   font-size: 2rem;
+}
+.course-details border-1px clearfix p-15 pt-15{
+  border: 1px solid white;
+}
+.author-thumb img{
+  border-radius: 100%;
+}
+
+.course-thumb .img-fullwidth{
+  width: 250px;
+  height: 300px;
 }
 #album .photo {
   display: grid;
