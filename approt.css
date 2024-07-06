@@ -1,282 +1,592 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>École XYZ</title>
-    <link rel="stylesheet" href="approt.css">
-</head>
-<style>
-    
-</style>
-<body>
-    <header>
-        <div class="logo">
-            <img src="https://www.collegelharmattan.com/assets/images/photos/logo.png" alt="Logo de l'école">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="#about">À propos</a></li>
-                <li><a href="#admissions">Admissions</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    <div id="nav-latteral" class="nav-latteral">
-        <div id="nav-close" class="nav-button">
-          <ion-icon name="close"></ion-icon>
-        </div>
-        <div class="nav-links">
-          <div class="nav-link" style="color: black;">
-            <a href="#" style="color: black;">Acceuil</a>
-          </div>
-          <div class="nav-link" style="color: black;">
-            <a href="Appropot.html" style="color: black;">Approt</a>
-          </div>
-          <div class="nav-link">
-            <a href="equipe.html"style="color: black;">Equipe</a>
-          </div>
-          <div class="nav-link">
-            <a href="contact.html"style="color: black;">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div id="nav-wrapper"></div>
-      <nav>
-        <div id="nav-open" class="nav-button">
-          <ion-icon name="reorder-three"></ion-icon>
-        </div>
-      </nav>
-    </header>
-    <main>
-        <!-- Section À Propos -->
-        <section id="about" class="about">
-            <div class="history">
-                <h2>Histoire de l'école</h2>
-                <p>L'École XYZ a été fondée en 1990 avec la mission de fournir une éducation de qualité dans un environnement inclusif et bienveillant. Depuis lors, elle a formé des milliers d'élèves qui ont réussi dans divers domaines.</p>
-            </div>
-            <div class="mission">
-                <h2>Mission et valeurs</h2>
-                <p>Notre mission est d'inspirer et de former les leaders de demain en mettant l'accent sur l'excellence académique, le développement personnel et la responsabilité sociale. Nos valeurs fondamentales incluent le respect, l'intégrité, et la diversité.</p>
-            </div>
-        </section>
-    </main>
-
-        <!-- Section Crèche et Maternelle -->
-    <main>
-        <div class="animation-container">
-        <section id="creche-maternelle">
-            <h2>Section Crèche et Maternelle</h2>
-            <p>Bienvenue dans notre section dédiée à la crèche et à la maternelle. Nous offrons un environnement sûr, stimulant et éducatif pour les jeunes enfants, leur permettant de s'épanouir et de grandir en toute confiance.</p>
-            <div class="image-section">
-                <img src="https://collegelharmattan.com/assets/images/bases/IMG_2695.jpg" alt="Enfants jouant à la crèche">
-            </div>
-            <button onclick="toggleDetails('crecheMaternelleDetails')">En savoir plus</button>
-            <div id="crecheMaternelleDetails" class="details" ">
-                <h3>Crèche</h3>
-                <p>Dans notre crèche, nous accueillons les tout-petits avec des activités adaptées à leur âge, incluant des jeux éducatifs, des ateliers d'éveil, et des sorties pédagogiques. Notre équipe est dédiée à assurer le bien-être et le développement des enfants dans un cadre sécurisé.</p>
-                <div class="image-section">
-                    <img src="https://collegelharmattan.com/assets/images/bases/IMG_2705.jpg" alt="Enfants en activité à la maternelle">
-                </div>
-                <h3>Maternelle</h3>
-                <p>En maternelle, nous encourageons le développement des compétences sociales et cognitives des enfants à travers des activités ludiques et éducatives. Les enfants participent à des activités artistiques, des jeux de groupe, et des séances de lecture, leur permettant de développer leur créativité et leur amour de l'apprentissage.</p>
-            </div>
-        </div>
-        </section>
-    </main>
-    <main>
-        <section id="primaire">
-            <h2>Niveau Primaire</h2>
-            <p style="font-size: 1.2em;line-height: 1.5;">Bienvenue dans notre section dédiée au niveau primaire. Nous offrons un environnement d'apprentissage enrichissant et stimulant pour les enfants de 6 à 11 ans, leur permettant de développer des compétences académiques et sociales essentielles.</p>
-            <div class="image-section">
-                <img src="https://collegelharmattan.com/assets/images/bases/xs3.jpg" alt="Enfants au niveau primaire">
-            </div>
-            <button onclick="toggleDetails('primaireDetails')">En savoir plus</button>
-            <div id="primaireDetails" class="details" style="display: none;">
-                <h3>Programmes Académiques</h3>
-                <p>Nos programmes académiques sont conçus pour stimuler la curiosité et l'amour de l'apprentissage chez les enfants. Nous offrons des cours en mathématiques, sciences, langues, et arts, avec des méthodes d'enseignement innovantes et interactives.</p>
-                <div class="image-section">
-                    <img src="https://collegelharmattan.com/assets/images/bases/xs3.jpg" alt="Classe au niveau primaire">
-                </div>
-                <h3>Activités Extrascolaires</h3>
-                <p>En plus des cours académiques, nous proposons une variété d'activités extrascolaires pour encourager le développement personnel et social des enfants. Des sports, de la musique, et des clubs artistiques sont disponibles pour tous les élèves.</p>
-            </div>
-        </section>
-    </main>
-        </section>
-
-        <!-- Section Humanitaire -->
-    <main>
-        <section id="terminal">
-            <h2>Niveau Terminal</h2>
-            <p style="font-size: 1.2em;line-height: 1.5;">Bienvenue dans notre section dédiée aux étudiants de terminale. Nous offrons un environnement académique rigoureux et stimulant pour préparer les étudiants aux défis de l'enseignement supérieur et de leur future carrière.</p>
-            <div class="image-section">
-                <img src="C:\Users\Abija\Pictures\terminal_students.jpg" alt="Étudiants de terminale">
-            </div>
-            <button onclick="toggleDetails('terminalDetails')">En savoir plus</button>
-            <div id="terminalDetails" class="details">
-                <h3>Programme Scolaire</h3>
-                <p>Notre programme Scolaire de terminale est conçu pour offrir une préparation approfondie aux examens du baccalauréat et aux admissions universitaires. Nous offrons des cours avancés dans diverses matières, y compris les sciences, les mathématiques, les langues, et les sciences humaines.</p>
-                
-                <h4>Laboratoires de Sciences</h4>
-                <p >Nos laboratoires de sciences sont équipés de matériel de pointe permettant aux étudiants de réaliser des expériences pratiques en physique, chimie, et biologie.</p>
-                <div class="image-section">
-                    <img src="https://collegelharmattan.com/assets/images/news/632f04ad9947a0.83257380.jpg" alt="Laboratoire de sciences">
-                </div>
-                
-                <h4>Salles de Classe Avancées</h4>
-                <p>Les salles de classe sont équipées de technologies modernes pour faciliter un apprentissage interactif et dynamique. Chaque classe dispose de tableaux interactifs, de projecteurs, et de ressources numériques.</p>
-                <div class="image-section">
-                    <img src="C:\Users\Abija\Pictures\advanced_class.jpg" alt="Classe avancée">
-                </div>
-                
-                <h4>Installations Sportives</h4>
-                <p>Nos installations sportives comprennent un gymnase, des terrains de sport extérieurs, et une piscine. Ces installations permettent aux étudiants de participer à diverses activités sportives et de maintenir une bonne condition physique.</p>
-                <div class="image-section">
-                    <img src="C:\Users\Abija\Pictures\sports_facility.jpg" alt="Installations sportives">
-                </div>
-                
-                <h3>Orientation et Conseils</h3>
-                <p>Nous fournissons un soutien personnalisé en orientation et en conseils pour aider les étudiants à faire des choix éclairés concernant leur avenir académique et professionnel. Nos conseillers sont disponibles pour discuter des options universitaires, des bourses, et des carrières possibles.</p>
-            </div>
-        </section>
-    </main>
-    <section id="humanitarian-activities">
-        <h2>Activités Humanitaires</h2>
-        <p style="font-size: 1.2em;line-height: 1.5;">Nos étudiants participent à diverses activités humanitaires pour contribuer à la société et développer leur sens de la responsabilité sociale. Ces activités incluent des campagnes de collecte de fonds, du bénévolat dans des centres communautaires, et des projets de soutien aux personnes défavorisées.</p>
-        <div class="image-section">
-            <img src="path/to/humanitarian_activities.jpg" alt="Activités humanitaires">
-        </div>
-    </section>
-
-    <section id="admissions">
-        <h2>Admissions à l'École</h2>
-        <p>Pour postuler à notre école, veuillez remplir le formulaire de candidature disponible sur notre site web. Les admissions sont basées sur les résultats académiques et une entrevue personnelle.</p>
-        <button onclick="toggleDetails('admissionsDetails')">En savoir plus</button>
-        <div id="admissionsDetails" class="details">
-            <h3>Critères d'Admission</h3>
-            <p>Les critères d'admission incluent les résultats académiques, les activités extrascolaires, et une entrevue avec le comité d'admission.</p>
-            <h3>Procédure de Candidature</h3>
-            <p>Remplissez le formulaire de candidature en ligne, soumettez les documents requis, et prenez rendez-vous pour une entrevue.</p>
-        </div>
-    </section>
-
-    <section id="forms-documents">
-        <h2>Formulaires et Documents</h2>
-        <p>Vous pouvez télécharger les formulaires et documents nécessaires pour l'admission, les bourses, et les autorisations parentales à partir de notre site web.</p>
-        <div class="image-section">
-            <img src="path/to/forms_documents.jpg" alt="Formulaires et documents">
-        </div>
-        <h2>Téléchargez les formulaires nécessaires pour l'inscription :</h2>
-	<a href="#">Formulaire d'inscription</a>
-	<a href="#">Liste des documents requis</a>
-	<a href="#">Formulaire d'inscription</a>
-	<a href="#">Liste des documents requis</a>
-	<a href="#">Formulaire d'inscription</a>
-
-    </section>
-
-    <section id="important-dates">
-        <h2>Dates Importantes</h2>
-        <p>Consultez notre calendrier académique pour connaître les dates importantes telles que les dates d'inscription, les vacances scolaires, et les examens.</p>
-        <div class="image-section">
-            <img src="path/to/important_dates.jpg" alt="Dates importantes">
-        </div>
-    </section>
-
-    <section id="payment">
-        <h2>Comment Payer</h2>
-        <p>Les frais de scolarité peuvent être payés en ligne via notre portail sécurisé, par virement bancaire, ou par chèque. Des plans de paiement échelonnés sont également disponibles.</p>
-        <div class="image-section">
-            <img src="path/to/payment.jpg" alt="Comment payer">
-        </div>
-    </section>
-
-    <section id="academic-schedule">
-        <h2>Horaire Académique</h2>
-        <p>Notre horaire académique est conçu pour offrir un équilibre entre les cours, les activités extrascolaires, et le temps de révision. Consultez l'horaire détaillé sur notre site web.</p>
-        <div class="image-section">
-            <img src="path/to/academic_schedule.jpg" alt="Horaire académique">
-        </div>
-    </section>
-    <div class="charity-events">
-        <h2>Événements de Charité</h2>
-        <p>L'École XYZ organise des événements de charité tout au long de l'année pour soutenir diverses causes. Ces événements incluent des collectes de fonds, des ventes de charité, et des journées de sensibilisation.</p>
-    </div>
-    <section id="faqs">
-        <h2>FAQs</h2>
-        <p>Vous trouverez ci-dessous les réponses aux questions les plus fréquemment posées par les étudiants et leurs parents.</p>
-        <button onclick="toggleDetails('faqsDetails')">Voir les FAQs</button>
-        <div id="faqsDetails" class="details">
-            <h3>Quels sont les frais de scolarité?</h3>
-            <p>Les frais de scolarité varient selon le programme choisi. Consultez notre page sur les frais pour plus de détails.</p>
-            <h3>Quelles activités extrascolaires sont disponibles?</h3>
-            <p>Nous offrons une variété d'activités, y compris des clubs de sport, des clubs de sciences, des groupes de musique, et plus encore.</p>
-            <h3>Comment puis-je obtenir une bourse?</h3>
-            <p>Les bourses sont attribuées en fonction des résultats académiques et des besoins financiers. Consultez notre page sur les bourses pour plus d'informations.</p>
-            <h3>Quelle est la durée du processus d'admission ?</h3>
-            <p>Le processus prend environ * semaines.</p>
-	        <h3>Quels sont les frais de scolarité ?</h3>
-            <p>Les frais varient selon le niveau scolaire. Veuillez consulter notre page des tarifs pour plus de détails.</p>
-	        <h3>Offrez-vous des bourses d'études ?</h3>
-            <p> Oui, nous offrons plusieurs bourses basées sur le mérite et les besoins financiers.</p>
-
-        </div>
-    </section>
-</main>
-            
-
-        <!-- Section Admissions -->
-        
-
-
-    <footer>
-        <p><center>&copy; 2024 École XYZ. Tous droits réservés.</center></p>
-    </footer>
-        <script>
-        function toggleDetails(id) {
-            var element = document.getElementById(id);
-            if (element.style.display === "none") {
-                element.style.display = "block";
-            } else {
-                element.style.display = "none";
-            }
-        }
-
-        function createBubbles() {
-            const animationContainer = document.querySelector('.animation-container');
-            for (let i = 0; i < 20; i++) {
-                const bubble = document.createElement('div');
-                bubble.className = 'bubble';
-                bubble.style.width = bubble.style.height = `${Math.random() * 60 + 20}px`;
-                bubble.style.left = `${Math.random() * 100}%`;
-                bubble.style.animationDuration = `${Math.random() * 5 + 5}s`;
-                animationContainer.appendChild(bubble);
-            }
-        }
-
-        document.addEventListener('DOMContentLoaded', createBubbles);
-
-        function toggleDetails(id) {
-    var element = document.getElementById(id);
-    if (element.style.display === "none") {
-        element.style.display = "block";
-    } else {
-        element.style.display = "none";
+     /* Reset CSS */
+     html {
+        --var-bg-color: #7743e9;
+        --var-secondary-color: #6e51cf;
+        --var-text-color: #fff;
+        --var-text-color-dark: #333;
+        --var-bg-light: #f0f4ff;
+        --var-bg-dark: #d3c9f3;
+      }
+     * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
-}
 
-document.addEventListener('DOMContentLoaded', () => {
-    const details = document.querySelectorAll('.details');
-    details.forEach(detail => detail.style.display = 'none');
-});
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #d3c9f3;
+        color: #333;
+    }
+    header .logo img{
+        width: 30px;
+        display: block;
+        margin: 0 auto;/* Centrer le logo horizontalement */
+        
+    }
+    
+    /* En-tête */
+    header {
+        height: 4rem;
+        background-color: white;
+        padding: 0 2rem;
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+    header nav ul{
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 5rem;
+    
+    } 
+    header nav ul li a {
+        text-decoration: none;
+        color: #6e51cf;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 10px;
+    }
 
-    </script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="script.js">
-</body>
-</html>
+
+    nav ul li a.active,
+    nav ul li a:hover {
+        background-color: #444;
+        border-radius: 5px;
+        color: white;
+    }
+    #nav-latteral {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 250px;
+        height: 500px;
+        background-color: white;
+        box-shadow: 2px 0 5px rgba(0,0,0,0.5);
+        z-index: 1000;
+        border-radius: 5px;
+        
+        background: linear-gradient(90deg, var(--var-bg-color) 25%, #9b8dc8 100%);
+        }
+        
+        /* Montrer la barre latérale lorsqu'elle est active */
+        #nav-latteral.active {
+        display: block;
+        }
+        
+        /* Styles supplémentaires pour le wrapper pour couvrir toute la page quand la barre latérale est ouverte */
+        #nav-wrapper.active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 999;
+        }
+        
+        /* Masquer le wrapper par défaut */
+        #nav-wrapper {
+        display: none;
+        }
+        
+        
+        #nav-wrapper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.6);
+        z-index: 2;
+        display: none;
+        }
+        
+        #nav-wrapper.active {
+        display: block;
+        }
+        
+        #nav-close {
+        margin-bottom: 4rem;
+        }
+        
+        .nav-links {
+        padding: 1rem 6rem 1rem 3rem;
+        }
+        
+        .nav-link {
+        cursor: pointer;
+        font-size: 25px;
+        margin-bottom: 50px;
+        display: flex;
+        align-items: center;
+        }
+        
+        .nav-link a{
+        list-style: none;
+        text-decoration: none;
+        }
+        
+        .nav-link ion-icon {
+        margin-right: 15px;
+        }
+        
+        .nav-link{
+        transition: all 0.2s ease;
+        }
+        
+        .nav-button {
+        position: absolute;
+        font-size: 40px;
+        cursor: pointer;
+        height: 50px;
+        width: 50px;
+        display: none;
+        justify-content: center;
+        border-radius: 5px;
+        top: 10px;
+        left:  10px;
+        }
+        
+        .nav-button:hover {
+        color: bleu;
+        background-color: #dedede;
+        }
+        /* Default button style */
+        .button {
+        padding: 10px 20px;
+        background-color: blue; 
+        color: white; 
+        font-size: 20px; 
+        }
+        main::-webkit-scrollbar {
+            background-color: #dedede;
+            width: 0.5rem;
+            }
+            main::-webkit-scrollbar-thumb {
+            background-color: #757575;
+            }
+            
+    main{
+        background-color: #fff;
+        margin: 5px;
+        border-radius: 5px;
+    }
+    .history h2{
+        color: #0073e6;
+        font-size: 2em;
+        text-align: center;
+
+    } 
+    .history p{
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    .mission h2{
+        color: #0073e6;
+        font-size: 2em;
+        text-align: center;
+
+    }
+    .mission p{
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    .about{
+        margin: 0 10px;
+    }
+    .animation-container{
+        margin: 0 5px;
+    }
+    .animation-container h2 {
+            color: #0073e6;
+            font-size: 2em;
+            text-align: center;
+        }
+    .animation-container p {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    .animation-container button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    .animation-container button:hover {
+        background-color: #6e51cf;
+    }
+    .animation-container .details {
+        margin-top: 20px;
+        border-top: 2px solid #6e51cf;
+        padding-top: 20px;
+    }
+    .animation-container .image-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .animation-container .image-section img {
+        width: 200px;
+        border-radius: 15px;
+    }
+    .animation-container .bubble {
+        position: absolute;
+        bottom: -100px;
+        border-radius: 50%;
+        opacity: 0.7;
+        animation: rise 10s infinite;
+    }
+    #primaire h2 {
+        color: #0073e6;
+        font-size: 2.5em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    #primaire p {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #primaire button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #primaire button:hover {
+        background-color: #005bb5;
+        transform: scale(1.05);
+    }
+    #primaire .details {
+        margin-top: 20px;
+        border-top: 2px solid #0073e6;
+        padding-top: 20px;
+    }
+    
+    #primaire h3 {
+        color: #0073e6;
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    #primaire .image-section {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    #primaire .image-section img {
+        width: 100%;
+        max-width: 300px;
+        border-radius: 15px;
+        transition: transform 0.3s;
+    }
+    
+    #primaire .image-section img:hover {
+        transform: scale(1.1);
+    }
+
+    #primaire .details {
+        animation: fadeIn 1s ease-in-out;
+    }
+    #terminal h2 {
+        color: #0073e6;
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    
+    #terminal p {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #terminal button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #terminal button:hover {
+        background-color: #1f618d;
+        transform: scale(1.05);
+    }
+    #terminal .details {
+        margin-top: 20px;
+        border-top: 2px solid #2980b9;
+        padding-top: 20px;
+        display: none;
+    }
+    
+    #terminal h3 {
+        color: #0073e6;
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    #terminal h4 {
+        color: #0073e6;
+        font-size: 1.5em;
+        margin-top: 20px;
+    }
+    
+    #terminal .image-section {
+        text-align: center;
+        margin: 30px 0;
+    }
+    #terminal .image-section img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    #terminal .details {
+        animation: fadeIn 0.8s ease-in-out;
+    }
+    #humanitarian-activities{
+        background-color: white;
+        margin: 0 5px;
+        border-radius: 5px;
+    }
+    #humanitarian-activities h2{
+        margin: 5px;
+    }
+    #humanitarian-activities p{
+        margin: 5px;
+    }
+    #humanitarian-activities .image-section img {
+        width: 100%;
+        max-width: 600px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+    #admissions{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #admissions h2{
+        margin: 5px;
+    }
+    #admissions p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #admissions button{
+        display: block;
+        margin: 20px auto;
+        padding: 10px 20px;
+        background-color: #0073e6;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    #admissions button:hover {
+        background-color: #1f618d;
+        transform: scale(1.05);
+    }
+
+    #admissions h3{
+        color: #0073e6;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin: 5px;
+    }
+    #forms-documents{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #forms-documents h2{
+        margin: 5px;
+    }
+    #forms-documents p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #forms-documents a{
+        display: grid;
+        margin: 10px;
+    }
+    #admissions h3{
+        color: #0073e6;
+        font-size: 1.5em;
+        margin-top: 20px;
+        margin: 5px;
+    }
+    #important-dates{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #important-dates h2{
+        margin: 5px;
+    }
+    #important-dates p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #payment{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #payment h2{
+        margin: 5px;
+    }
+    #payment p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #academic-schedule{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #academic-schedule h2{
+        margin: 5px;
+    }
+    #academic-schedule p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    .charity-events{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .charity-events h2{
+        margin: 5px;
+    }
+    .charity-events p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    #faqs{
+        background-color: white;
+        border: 0 5px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    #faqs h2{
+        margin: 5px;
+    }
+    #faqs p{
+        margin: 5px;
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
+    @media (max-width: 600px) {
+        main {
+            padding: 20px;
+        }
+    
+        #terminal h2 {
+            font-size: 1.5em;
+        }
+    
+        #terminal p {
+            font-size: 1em;
+        }
+    
+        #terminal button {
+            font-size: 1em;
+            padding: 10px 20px;
+        }
+    
+        #terminal h3 {
+            font-size: 1.5em;
+        }
+    
+        #terminal h4 {
+            font-size: 1.2em;
+        }}
+    @media (max-width: 600px) {
+        main {
+            padding: 10px;
+        }
+    
+        #primaire h2 {
+            font-size: 2em;
+        }
+    
+        #primaire p {
+            font-size: 1em;
+        }
+    
+        #primaire button {
+            font-size: 1em;
+        }
+    
+        #primaire h3 {
+            font-size: 1.5em;
+        }
+        #primaire .image-section img {
+            max-width: 100%;
+        }
+    }
+    
+    @keyframes rise {
+        0% {
+            transform: translateY(0) scale(1);
+            opacity: 0.7;
+        }
+        50% {
+            opacity: 0.4;
+        }
+        100% {
+            transform: translateY(-1000px) scale(1.5);
+            opacity: 0;
+        }
+    }
+    @media screen and (max-width : 768px){
+        header{
+           flex-direction: column;}
+        header nav ul li a {    
+            display: none;
+        }
+           
+        header .logo img{
+            margin: 9px;
+        }}
