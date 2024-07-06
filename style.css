@@ -11,8 +11,8 @@
 
 
 html {
-  --var-bg-color: #7743e9;
-  --var-secondary-color: #6e51cf;
+  --var-bg-color: #1e42e4;
+  --var-secondary-color: #4134b4;
   --var-text-color: #fff;
   --var-text-color-dark: #333;
   --var-bg-light: #f0f4ff;
@@ -72,8 +72,8 @@ header nav ul li a:hover{
     text-decoration: underline;
     transition: 0.9s;
     font-size: large;
-    border: 1px solid #7743e9;
-    background-color: #7743e9;
+    border: 1px solid var(--var-bg-color);
+    background-color: var(--var-bg-color);
     margin: 30px;
     padding: 10px;
     border-radius: 5px;
@@ -643,7 +643,7 @@ footer {
   position: fixed;
   right: 0;
   bottom: 3rem;
-  background-color: #ccb6fa;
+  background-color: #6056bd;
   padding: 10px;
   border-radius: 2px;
   display: flex;
@@ -742,7 +742,7 @@ footer {
           margin: 9px;
         }  
       }
-      /* Button style for screens less than 600px wide */
+      /*  style for screens less than 600px wide */
 @media screen and (max-width: 768px) {
   .button {
   padding: 20px 40px; /* Increase padding */
@@ -776,6 +776,16 @@ footer {
   }
   .nav-links{
   padding: 6rem 70px;
+  .col-md-5 img{
+  width: 300px;
+  height: 300px;
+  margin-top: 15px;
+}
+.col-md-5 img{
+  width: 100px;
+  height: 100px;
+  margin-top: 7.5px;
+}
   }
 
      
